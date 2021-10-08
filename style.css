@@ -1,0 +1,5 @@
+body{
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+}
