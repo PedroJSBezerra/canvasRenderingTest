@@ -18,8 +18,9 @@ window.onload = () => {
 }
 
 function gameLoop(timeStamp){
+  draw(0,32)
+  draw(32,32)
   fpscounter(timeStamp)
-  draw(Math.random()*100,Math.random()*96)
   //keeping request new frames
   window.requestAnimationFrame(gameLoop)
 }
@@ -35,13 +36,12 @@ function fpscounter(timeStamp){
   ctx.fillRect(0, 0, 84, 32)
   ctx.font = '16px Arial'
   ctx.fillStyle = 'black'
+  console.log(fps)
   ctx.fillText("FPS: " + fps, 10, 22)
 }
 
 function draw(x,y){
-  let randomColor = "hsl("+Math.random()*360+",100%,50%)"
+  let randomColor = Math.random() > 0.5? '#ff8080' : '#0099b0'
   ctx.fillStyle = randomColor
-  ctx.fillRect( x, y, Math.random()*32, Math.random()*32)
-  // ctx.clearRect( x+1, y+1, 30, 30);
-  
+  ctx.fillRect(x,y,32,32)
 }
