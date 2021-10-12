@@ -8,8 +8,47 @@
   <title>Document</title>
 </head>
 <body>
-  <canvas id="canvas" style="border: 1px solid;"></canvas>
-  <span id="info"></span>
+  <div class="app">
+    
+    <nav>
+      <div class="logo">GameDev</div>
+      
+      <div class="hamburguer">
+        <span></span>
+      </div>
+
+      <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#mapMaker">MapMaker</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="home">
+        <h1>Construa mundos "2d" do seu Jeito!</h1>
+        <p>Com mapMaker da gameDev você carrega um arquivo .png com o sprite 
+          em blocos no formato 32x32px, depois monta o mapa da maneira que desejar,
+          ai é só exportar.
+        </p>
+      </div>
+      <div id="mapMaker">
+        <h1>mapMaker</h1>
+        <div class="addsprite">
+          <input type="file" accept="image/png" name="" id="imgFile">
+          <img id="output"></img>
+        </div>
+      </div>
+      <div id="contact">
+        <h1>Contact</h1>
+      </div>
+      <div id="about">
+        <h1>About</h1>
+      </div>
+    </main>
+
+  </div>
+ 
   <script src="./script.js"></script>
 </body>
 </html>
