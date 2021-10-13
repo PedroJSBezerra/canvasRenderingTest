@@ -26,13 +26,14 @@
     </nav>
     <main>
       <div id="home">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div id="mapMaker">
         <h1>Construa mundos "2d" do seu Jeito!</h1>
         <p>Com mapMaker da gameDev você carrega um arquivo .png com o sprite 
           em blocos no formato 32x32px, depois monta o mapa da maneira que desejar,
           ai é só exportar.
         </p>
-      </div>
-      <div id="mapMaker">
         <h1>mapMaker</h1>
         <div class="addsprite">
           <input type="file" accept="image/png" name="" id="imgFile">
@@ -48,7 +49,7 @@
     </main>
 
   </div>
- 
+ <script src="./canvas.js" type="module"></script>
   <script src="./script.js"></script>
 </body>
 </html>
