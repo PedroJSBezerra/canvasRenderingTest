@@ -16,5 +16,13 @@ function fpscounter(timeStamp, ctx){
   ctx.fillStyle = 'black'
   ctx.fillText("FPS: " + fps, 10, 22)
 }
+function keyboard(canvas){
+  let keys = []
+  canvas.onkeydown = canvas.onkeyup = (e) => {
+    keys[e.key] = e.type == 'keydown'
+    console.log(keys)
+  }
+  return keys
+}
 
-export {fpscounter}
+export {fpscounter, keyboard}
